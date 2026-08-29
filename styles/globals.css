@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-paper text-ink antialiased;
+  }
+
+  ::selection {
+    background: #1b4332;
+    color: #fff;
+  }
+}
+
+@layer components {
+  .site-wrap {
+    @apply mx-auto w-full max-w-site px-5 sm:px-8;
+  }
+
+  .eyebrow {
+    @apply text-[11px] font-medium uppercase tracking-[0.18em] text-forest-500;
+  }
+
+  .display {
+    @apply font-serif text-4xl leading-[1.08] tracking-[-0.02em] text-ink sm:text-5xl lg:text-[56px];
+  }
+
+  .body-copy {
+    @apply text-base leading-7 text-ink-muted sm:text-[17px];
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center rounded-[4px] bg-forest-500 px-5 py-3 text-sm font-medium text-white transition hover:bg-forest-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-forest-500;
+  }
+
+  .btn-dark {
+    @apply inline-flex items-center justify-center rounded-[4px] bg-ink px-5 py-3 text-sm font-medium text-white transition hover:bg-neutral-800;
+  }
+
+  .btn-ghost {
+    @apply inline-flex items-center gap-2 text-sm font-medium text-ink transition hover:text-forest-600;
+  }
+
+  .field {
+    @apply w-full rounded-[4px] border border-line bg-white px-3 py-2.5 text-sm text-ink outline-none transition placeholder:text-ink-faint focus:border-forest-500;
+  }
+
+  .section {
+    @apply py-20 sm:py-28;
+  }
+}
+
+.marquee-mask {
+  mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+}
+
+.marquee-track {
+  animation: marquee 42s linear infinite;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}

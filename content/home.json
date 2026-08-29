@@ -1,0 +1,14 @@
+{
+  "hero": {
+    "title": "Empowering Girls Through Education",
+    "subtitle": "Join us in supporting puberty lessons and sanitary towel distribution in Kibera.",
+    "ctaText": "Make an Impact"
+  },
+  "stats": {
+    "schoolsReached": 2,
+    "schools": ["Olympic Primary", "Ayany Primary"],
+    "girlsSupported": 500,
+    "videoUrl": "https://example.com/video.mp4"
+  },
+  "missionSummary": "Partnering with local African churches and government primary schools to deliver Bible-based puberty lessons and distribute washable sanitary towels."
+}
